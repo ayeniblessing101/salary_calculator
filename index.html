@@ -7,36 +7,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Salary Calculator</title>
 	<meta name="description" content="To Calculate Employee Salary">
-
-	<!-- External CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styler.css">
 
 </head>
 <body>
-
-	<form>
-	<p>Select Level</p>
-	<select id="level" require>
-		<option value=0>Select a Level</option>
-		<option value="level 1">Level 1</option>
-		<option value="level 2">Level 2</option>
-	</select>
-
-	<p>Select Employee Type</p>
-	<select id="employeeType" required>
-		<option value=0>Select Employee Type</option>
-		<option value="interns">Interns</option>
-		<option value="associates">Associates</option>
-		<option value="managers">Managers</option>
-		<option value="executives">Executives</option>
-		<option value="directors">Directors</option>
-	</select><br><br>
-	<button onclick="calculateSalary()">Submit</button>
-	</form>
-
-	<script src="js/salary_calculator.js"></script>
-
-
+	<h1> Salary Calculator</h1>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-4">
+			</div>
+			<div class = "col-md-4"></br>
+				<form>
+					<fieldset>
+						<div class="form-group">
+							<label for=""><h3>Employee Type</h3></label>
+							<select id="employeeType" class="form-control">
+								<option value=0>Select Employee Type</option>
+								<option value="interns">Interns</option>
+								<option value="associates">Associates</option>
+								<option value="managers">Managers</option>
+								<option value="executives">Executives</option>
+								<option value="directors">Directors</option>
+							</select>
+							<label for=""><h3>Choose Level</h3></label>
+							<select id="level" class="form-control">
+								<option value=0>Select Level</option>
+								<option value="level 1">Level 1</option>
+								<option value="level 2">Level 2</option>
+							</select>
+						</div>
+						<button onclick="calculateSalary()" class="btn btn-primary">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class = "col-md-4">
+			</div>
+		</div>
+	</div>
+<script src="js/salary_calculator.js"></script>
 </body>
 
 </html>
