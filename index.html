@@ -10,10 +10,33 @@
 
 	<!-- External CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    
+
 </head>
 <body>
 
+	<form>
+	<p>Select Level</p>
+	<select id="level" require>
+		<option value=0>Select a Level</option>
+		<option value="level 1">Level 1</option>
+		<option value="level 2">Level 2</option>
+	</select>
+
+	<p>Select Employee Type</p>
+	<select id="employeeType" required>
+		<option value=0>Select Employee Type</option>
+		<option value="interns">Interns</option>
+		<option value="associates">Associates</option>
+		<option value="managers">Managers</option>
+		<option value="executives">Executives</option>
+		<option value="directors">Directors</option>
+	</select><br><br>
+	<button onclick="calculateSalary()">Submit</button>
+	</form>
+
+	<script src="js/salary_calculator.js"></script>
+
+
 </body>
 
-</html>	
+</html>
